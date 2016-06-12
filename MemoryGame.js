@@ -29,7 +29,7 @@ function isEnd () {
     const p2 = +$('[id="p2"]').html();
     var winner = '';
     if ( p1 + p2  === 100 ) {
-        winner = p1 === p2 ? "It's a tie!" : (p1 > p2 ? "Player 1 Win!" : "Player 2 Win!");
+        winner = p1 === p2 ? "It's a tie!" : (p1 > p2 ? "Player 1 Won!" : "Player 2 Won!");
         $("strong").html(winner);
         if (player === 'p1') {
             $('div.player1 i.hand-red').toggleClass('no-display');
@@ -37,8 +37,6 @@ function isEnd () {
             $('div.player2 i.hand-red').toggleClass('no-display');
         }
         $('div.tile').remove();
-        $('[id="p1"]').html('0');
-        $('[id="p2"]').html('0');
         $("#win").show();
         $('button#start-game').attr('disabled', false);
 
@@ -93,6 +91,9 @@ function tile_click () {
 }
 
 $('button#start-game').click(function() {
+    $('[id="p1"]').html('0');
+    $('[id="p2"]').html('0');
+    closeMessage();
     player = 'p1';
     for (var i = 0; i < 10; i++) {
         let el = $('<div class="tile"></div>');
