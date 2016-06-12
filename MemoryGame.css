@@ -1,0 +1,60 @@
+.tile {
+    width: 19%;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+}
+
+.span-in-tile {
+    padding-top: 15px;
+}
+
+.player1 {
+    float: left;
+    border: 3px solid black;
+    margin-top: 10px;
+}
+
+.player2 {
+    float: right;
+    border: 3px solid black;
+    margin-top: 10px;
+
+}
+
+.cards {
+    margin-top: 20px;
+}
+
+.players {
+
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.hand-red {
+    background: red;
+    color: white;
+}
+
+#start-game {
+    margin: 20px auto;
+}
+
+.no-display {
+    display: none;
+}
+
+.text-black {
+    color: black;
+}
+
+.no-border {
+    border: white;
+}

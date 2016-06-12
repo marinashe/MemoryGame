@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MemoryGame.css" >
+</head>
+<body>
+<div class="row players">
+    <div class="container player1 col-xs-6">
+        <span class="text-p1"><i class="fa fa-child fa-2x"></i> <b>Player 1</b></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="text-p1"><i class="fa fa-gamepad fa-2x"></i> Points: </span>
+        <span id="p1">0</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-hand-spock-o fa-2x hand-red no-display"></i>
+    </div>
+    <div class="container player2 col-xs-6">
+        <span class="text-p2"><i class="fa fa-child fa-2x"></i> <b>Player 2</b></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="text-p2"><i class="fa fa-gamepad fa-2x"></i> Points: </span>
+        <span id="p2">0</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-hand-spock-o fa-2x hand-red no-display" ></i>
+    </div>
+    <button id="start-game" class="btn btn-success">Start Game!</button>
+</div>
+<div id="win" class="alert alert-success collapse" role="alert">
+        <button type="button" class="close" onclick="closeMessage()" >
+            <span>&times;</span>
+        </button>
+        <p align="center"><strong></strong></p>
+</div>
+<div class="row">
+    <div class="cards">
+
+    </div>
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script src="MemoryGame.js"></script>
+</body>
+</html>
